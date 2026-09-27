@@ -63,4 +63,62 @@ function searchWebsite() {
         searchWebsite();
     }
 
+});/* ================================
+   AUTO BREADCRUMB SYSTEM
+================================ */
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const container = document.querySelector(".container");
+
+    if (!container) return;
+
+    const path = window.location.pathname;
+    const page = path.split("/").pop();
+
+    const pages = {
+        "ctet.html": {
+            parent: "Home",
+            parentLink: "index.html",
+            name: "CTET"
+        },
+
+        "ctet-paper1.html": {
+            parent: "CTET",
+            parentLink: "ctet.html",
+            name: "Paper 1"
+        },
+
+        "ctet-paper2.html": {
+            parent: "CTET",
+            parentLink: "ctet.html",
+            name: "Paper 2"
+        }
+    };
+
+    const current = pages[page];
+
+    if (!current) return;
+
+    const breadcrumb = document.createElement("div");
+
+    breadcrumb.className = "breadcrumb";
+
+    breadcrumb.innerHTML = `
+        <a href="index.html">Home</a>
+        <span>›</span>
+        ${
+            current.parent === "Home"
+            ? `<span>${current.name}</span>`
+            : `<a href="${current.parentLink}">${current.parent}</a>
+               <span>›</span>
+               <span>${current.name}</span>`
+        }
+    `;
+
+    container.insertBefore(
+        breadcrumb,
+        container.firstElementChild
+    );
+
 });
