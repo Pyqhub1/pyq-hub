@@ -1979,4 +1979,19 @@ a:focus-visible {
         margin-top: 12px;
     }
 
+}.breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.breadcrumb a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+.breadcrumb span {
+    color: #64748b;
 }
