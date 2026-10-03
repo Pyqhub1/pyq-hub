@@ -1,66 +1,180 @@
-const searchInput = document.getElementById("searchInput");
-const searchBtn = document.getElementById("searchBtn");
+/* =========================================
+   PYQ HUB - MAIN JAVASCRIPT
+   ========================================= */
 
-function searchWebsite() {
+document.addEventListener("DOMContentLoaded", function () {
 
-    const searchText = searchInput.value.trim().toLowerCase();
+    /* =========================
+       SEARCH
+       ========================= */
 
-    const allCards = [
-        ...document.querySelectorAll(".exam-card"),
-        ...document.querySelectorAll(".paper-card"),
-        ...document.querySelectorAll(".subject-card")
-    ];
+    const searchInput = document.getElementById("searchInput");
+    const searchBtn = document.getElementById("searchBtn");
 
-    let firstMatch = null;
+    function searchWebsite() {
 
-    allCards.forEach(function(card) {
+        if (!searchInput) return;
 
-        const text = card.textContent.toLowerCase();
+        const searchText = searchInput.value.trim().toLowerCase();
 
-        if (searchText === "") {
+        const allCards = document.querySelectorAll(
+            ".exam-card, .paper-card, .subject-card"
+        );
 
-            if (card.classList.contains("paper-card")) {
-                card.style.display = "flex";
+        let firstMatch = null;
+
+        allCards.forEach(function (card) {
+
+            const cardText = card.textContent.toLowerCase();
+            const isMatch =
+                searchText === "" || cardText.includes(searchText);
+
+            if (isMatch) {
+
+                /* Paper cards use flex layout */
+                if (card.classList.contains("paper-card")) {
+                    card.style.display = "flex";
+                } else {
+                    card.style.display = "";
+                }
+
+                if (searchText !== "" && !firstMatch) {
+                    firstMatch = card;
+                }
+
             } else {
-                card.style.display = "";
+
+                card.style.display = "none";
+
             }
 
-        } else if (text.includes(searchText)) {
+        });
 
-            if (card.classList.contains("paper-card")) {
-                card.style.display = "flex";
-            } else {
-                card.style.display = "";
-            }
+        /* Scroll to first result */
+        if (firstMatch) {
 
-            if (!firstMatch) {
-                firstMatch = card;
-            }
+            setTimeout(function () {
 
-        } else {
+                firstMatch.scrollIntoView({
+                    behavior: "smooth",
+                    block: "center"
+                });
 
-            card.style.display = "none";
-
+            }, 100);
         }
+    }
 
-    });
 
-    if (firstMatch) {
+    /* Search Button */
+    if (searchBtn) {
+        searchBtn.addEventListener("click", searchWebsite);
+    }
 
-        setTimeout(function() {
 
-            firstMatch.scrollIntoView({
-                behavior: "smooth",
-                block: "center"
+    /* Enter Key */
+    if (searchInput) {
+        searchInput.addEventListener("keydown", function (event) {
+
+            if (event.key === "Enter") {
+                event.preventDefault();
+                searchWebsite();
+            }
+
+        });
+
+
+        /* Clear results when input becomes empty */
+        searchInput.addEventListener("input", function () {
+
+            if (searchInput.value.trim() === "") {
+                searchWebsite();
+            }
+
+        });
+    }
+
+
+    /* =========================
+       MOBILE MENU
+       ========================= */
+
+    const menuBtn = document.getElementById("mobileMenuBtn");
+    const navMenu = document.getElementById("mainNav");
+
+    if (menuBtn && navMenu) {
+
+        menuBtn.addEventListener("click", function () {
+
+            const isOpen = navMenu.classList.toggle("active");
+
+            menuBtn.setAttribute(
+                "aria-expanded",
+                isOpen ? "true" : "false"
+            );
+
+            menuBtn.setAttribute(
+                "aria-label",
+                isOpen
+                    ? "Close navigation menu"
+                    : "Open navigation menu"
+            );
+
+            menuBtn.textContent = isOpen ? "✕" : "☰";
+
+        });
+
+
+        /* Close menu after clicking a link */
+        navMenu.querySelectorAll("a").forEach(function (link) {
+
+            link.addEventListener("click", function () {
+
+                navMenu.classList.remove("active");
+
+                menuBtn.setAttribute(
+                    "aria-expanded",
+                    "false"
+                );
+
+                menuBtn.setAttribute(
+                    "aria-label",
+                    "Open navigation menu"
+                );
+
+                menuBtn.textContent = "☰";
+
             });
 
-        }, 100);
+        });
+
+
+        /* Close menu when clicking outside */
+        document.addEventListener("click", function (event) {
+
+            if (
+                navMenu.classList.contains("active") &&
+                !navMenu.contains(event.target) &&
+                !menuBtn.contains(event.target)
+            ) {
+
+                navMenu.classList.remove("active");
+
+                menuBtn.setAttribute(
+                    "aria-expanded",
+                    "false"
+                );
+
+                menuBtn.setAttribute(
+                    "aria-label",
+                    "Open navigation menu"
+                );
+
+                menuBtn.textContent = "☰";
+
+            }
+
+        });
 
     }
-}searchInput.addEventListener("input", function () {
 
-    if (searchInput.value.trim() === "") {
-        searchWebsite();
-    }
-
-});/* ================================
+});

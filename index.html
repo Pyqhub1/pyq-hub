@@ -1,890 +1,1511 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>PYQ Hub – Previous Year Question Papers & Exam Preparation</title>
-    <link rel="canonical" href="https://pyqhub1.github.io/pyq-hub/">
-    <!-- Open Graph -->
-<meta property="og:title" content="PYQ Hub – Previous Year Question Papers & Exam Preparation">
-<meta property="og:description" content="Find previous year question papers and exam preparation resources for CTET, HTET, CET, SSC, Railway and other exams.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://pyqhub1.github.io/pyq-hub/">
-<meta property="og:site_name" content="PYQ Hub">
-    <link rel="icon" type="image/png" href="fevicon.png.png">
 
     <meta name="description"
-          content="Find previous year question papers and exam preparation resources
-           for ctet, htet, cet, ssc, railway, and other exams at PYQ Hub.">
+        content="Find previous year question papers and exam preparation resources for CTET, HTET, CET, SSC, Railway and other exams at PYQ Hub.">
 
+    <link rel="canonical" href="https://pyqhub1.github.io/pyq-hub/">
+
+    <!-- Open Graph -->
+    <meta property="og:title"
+        content="PYQ Hub – Previous Year Question Papers & Exam Preparation">
+
+    <meta property="og:description"
+        content="Find previous year question papers and exam preparation resources for CTET, HTET, CET, SSC, Railway and other exams.">
+
+    <meta property="og:type" content="website">
+
+    <meta property="og:url"
+        content="https://pyqhub1.github.io/pyq-hub/">
+
+    <meta property="og:site_name" content="PYQ Hub">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="fevicon.png.png">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Main CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Website Schema -->
     <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "PYQ Hub",
-  "alternateName": "PYQHub",
-  "url": "https://pyqhub1.github.io/pyq-hub/"
-}
-</script>
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "PYQ Hub",
+        "alternateName": "PYQHub",
+        "url": "https://pyqhub1.github.io/pyq-hub/"
+    }
+    </script>
+
 </head>
 
-<body>
 
-<!-- ================= HEADER ================= -->
+<body id="top">
 
-<header class="header">
+    <!-- =====================================================
+         FLOATING BACKGROUND BUBBLES
+    ====================================================== -->
 
-    <div class="container nav-container">
+    <div class="floating-bubbles" aria-hidden="true">
 
-        <a href="#" class="logo">
-            <span class="logo-icon">📚</span>
-            <span>PYQ<span class="logo-highlight">Hub</span></span>
-        </a>
-        <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
-
-        <nav class="nav-menu">
-    <a href="#home">🏠 Home</a>
-    <a href="#exams">📝 Exams</a>
-    <a href="#papers">📄 PYQs</a>
-    <a href="#subjects">📚 Subjects</a>
-    <a href="#about">ℹ️ About</a>
-</nav>
-
-        <a href="#papers" class="header-btn">
-            Explore Papers
-        </a>
+        <span class="bubble bubble-1"></span>
+        <span class="bubble bubble-2"></span>
+        <span class="bubble bubble-3"></span>
+        <span class="bubble bubble-4"></span>
+        <span class="bubble bubble-5"></span>
+        <span class="bubble bubble-6"></span>
+        <span class="bubble bubble-7"></span>
+        <span class="bubble bubble-8"></span>
 
     </div>
 
-</header>
+
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
+
+    <header class="header">
+
+        <div class="container nav-container">
+
+            <!-- Logo -->
+            <a href="#home" class="logo" aria-label="PYQ Hub Home">
+
+                <span class="logo-icon">📚</span>
+
+                <span>
+                    PYQ<span class="logo-highlight">Hub</span>
+                </span>
+
+            </a>
 
 
-<!-- ================= HERO ================= -->
+            <!-- Mobile Menu Button -->
+            <button
+                class="mobile-menu-btn"
+                id="mobileMenuBtn"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="mainNav">
 
-<section class="hero" id="home">
+                ☰
 
-    <div class="container hero-content">
-
-        <div class="hero-text">
-
-            <div class="hero-badge">
-                🎯 Prepare Smarter • Practice Better
-            </div>
-
-            <h1>
-                Previous Year Questions
-                <span>All in One Place</span>
-            </h1>
-
-            <p>
-                Find exam-wise, year-wise and subject-wise previous
-                year question papers and prepare with confidence.
-            </p>
-
-            <div class="search-box">
-
-                <span>🔍</span>
-
-                <input
-                
-                
-    
-type="text"
-    id="searchInput"
-    placeholder="Search exam, year, subject..."
->
-                
-
-               <button id="searchBtn">Search</button>
-
-            </div>
-
-            <div class="popular-search">
-
-                <span>Popular:</span>
-
-                <a href="#exams">CTET</a>
-                <a href="#exams">HTET</a>
-                <a href="#exams">CET</a>
-                <a href="#exams">SSC</a>
-                <a href="#exams">Railway</a>
-
-            </div>
-        </div>
+            </button>
 
 
-        <div class="hero-card">
+            <!-- Navigation -->
+            <nav class="nav-menu" id="mainNav">
 
-            <div class="hero-card-icon">
-                📖
-            </div>
+                <a href="#home">🏠 Home</a>
 
-            <h3>Smart Exam Preparation</h3>
+                <a href="#exams">📝 Exams</a>
 
-            <p>
-                Practice previous year papers and understand
-                the pattern of your exam.
-            </p>
+                <a href="#papers">📄 PYQs</a>
 
-            <div class="hero-stat">
+                <a href="#subjects">📚 Subjects</a>
 
-                <div>
-                    <strong>PYQs</strong>
-                    <small>Available</small>
-                </div>
+                <a href="#about">ℹ️ About</a>
 
-                <div>
-                    <strong>📚</strong>
-                    <small>Multiple Exams</small>
-                </div>
-
-                <div>
-                    <strong>🎯</strong>
-                    <small>Exam Focused</small>
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
+            </nav>
 
 
-<!-- ================= QUICK FEATURES ================= -->
-
-<section class="features">
-
-    <div class="container feature-grid">
-
-        <div class="feature-card">
-            <div class="feature-icon blue">📄</div>
-            <div>
-                <h3>Previous Papers</h3>
-                <p>Find useful previous year papers.</p>
-            </div>
-        </div>
-
-        <div class="feature-card">
-            <div class="feature-icon purple">🔎</div>
-            <div>
-                <h3>Easy Search</h3>
-                <p>Search papers quickly by exam or year.</p>
-            </div>
-        </div>
-
-        <div class="feature-card">
-            <div class="feature-icon green">📱</div>
-            <div>
-                <h3>Mobile Friendly</h3>
-                <p>Study comfortably on any device.</p>
-            </div>
-        </div>
-
-        <div class="feature-card">
-            <div class="feature-icon orange">🎯</div>
-            <div>
-                <h3>Exam Focused</h3>
-                <p>Resources organized for students.</p>
-            </div>
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ================= POPULAR EXAMS ================= -->
-
-<section class="section" id="exams">
-
-    <div class="container">
-
-        <div class="section-heading">
-
-            <div>
-                <span class="section-label">EXPLORE</span>
-                <h2>Popular Exams</h2>
-                <p>Choose your exam and start practicing.</p>
-            </div>
-
-            <a href="#papers" class="view-all">
-                View All →
+            <!-- Header Button -->
+            <a href="#papers" class="header-btn">
+                Explore Papers
             </a>
 
         </div>
 
+    </header>
 
-        <div class="exam-grid">
 
-            <div class="exam-card">
-                <div class="exam-top">
-                    <div class="exam-icon ctet">🎓</div>
-                    <span class="tag">Popular</span>
+    <!-- =====================================================
+         HERO
+    ====================================================== -->
+
+    <section class="hero" id="home">
+
+        <div class="container hero-content">
+
+            <div class="hero-text">
+
+                <div class="hero-badge">
+                    🎯 Prepare Smarter • Practice Better
                 </div>
 
-                <h3>CTET</h3>
-                <p>Central Teacher Eligibility Test</p>
 
-                <a href="ctet.html">View Papers →</a>
-            </div>
+                <h1>
+                    Previous Year Questions
+                    <span>All in One Place</span>
+                </h1>
 
 
-            <div class="exam-card">
-                <div class="exam-top">
-                    <div class="exam-icon htet">👨‍🏫</div>
-                    <span class="tag">Teacher</span>
+                <p>
+                    Find exam-wise, year-wise and subject-wise previous
+                    year question papers and prepare with confidence.
+                </p>
+
+
+                <!-- Search -->
+                <div class="search-box">
+
+                    <span>🔍</span>
+
+                    <input
+                        type="text"
+                        id="searchInput"
+                        placeholder="Search exam, year, subject..."
+                        aria-label="Search exam, year or subject">
+
+                    <button
+                        type="button"
+                        id="searchBtn">
+
+                        Search
+
+                    </button>
+
                 </div>
 
-                <h3>HTET</h3>
-                <p>Haryana Teacher Eligibility Test</p>
 
-                <a href="htet.html">View Papers →</a>
-            </div>
+                <!-- Popular Searches -->
+                <div class="popular-search">
 
+                    <span>Popular:</span>
 
-            <div class="exam-card">
-                <div class="exam-top">
-                    <div class="exam-icon cet">📝</div>
-                    <span class="tag">Haryana</span>
+                    <a href="#exams">CTET</a>
+
+                    <a href="#exams">HTET</a>
+
+                    <a href="#exams">CET</a>
+
+                    <a href="#exams">SSC</a>
+
+                    <a href="#exams">Railway</a>
+
                 </div>
 
-                <h3>Haryana CET</h3>
-                <p>Common Eligibility Test</p>
-
-                <a href="cet.html">View Papers →</a>
             </div>
 
 
-            <div class="exam-card">
-                <div class="exam-top">
-                    <div class="exam-icon ssc">💼</div>
-                    <span class="tag">Govt. Jobs</span>
+            <!-- Hero Card -->
+            <div class="hero-card">
+
+                <div class="hero-card-icon">
+                    📖
                 </div>
 
-                <h3>SSC</h3>
-                <p>Staff Selection Commission</p>
+                <h3>
+                    Smart Exam Preparation
+                </h3>
 
-                <a href="ssc.html">View Papers →</a>
-            </div>
+                <p>
+                    Practice previous year papers and understand
+                    the pattern of your exam.
+                </p>
 
 
-            <div class="exam-card">
-                <div class="exam-top">
-                    <div class="exam-icon railway">🚆</div>
-                    <span class="tag">Railway</span>
+                <div class="hero-stat">
+
+                    <div>
+                        <strong>PYQs</strong>
+                        <small>Available</small>
+                    </div>
+
+                    <div>
+                        <strong>📚</strong>
+                        <small>Multiple Exams</small>
+                    </div>
+
+                    <div>
+                        <strong>🎯</strong>
+                        <small>Exam Focused</small>
+                    </div>
+
                 </div>
 
-                <h3>Railway</h3>
-                <p>Railway Recruitment Exams</p>
-
-                <a href="railway.html">View Papers →</a>
             </div>
 
+        </div>
 
-            <div class="exam-card">
-                <div class="exam-top">
-                    <div class="exam-icon other">📚</div>
-                    <span class="tag">More</span>
+    </section>
+
+
+    <!-- =====================================================
+         FEATURES
+    ====================================================== -->
+
+    <section class="features">
+
+        <div class="container feature-grid">
+
+            <div class="feature-card">
+
+                <div class="feature-icon blue">
+                    📄
                 </div>
 
-                <h3>Other Exams</h3>
-                <p>More competitive examinations</p>
+                <div>
+                    <h3>Previous Papers</h3>
+                    <p>Find useful previous year papers.</p>
+                </div>
 
-                <a href="other-exam.html">Explore →</a>
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon purple">
+                    🔎
+                </div>
+
+                <div>
+                    <h3>Easy Search</h3>
+                    <p>Search papers quickly by exam or year.</p>
+                </div>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon green">
+                    📱
+                </div>
+
+                <div>
+                    <h3>Mobile Friendly</h3>
+                    <p>Study comfortably on any device.</p>
+                </div>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon orange">
+                    🎯
+                </div>
+
+                <div>
+                    <h3>Exam Focused</h3>
+                    <p>Resources organized for students.</p>
+                </div>
+
             </div>
 
         </div>
 
-    </div>
-
-</section>
+    </section>
 
 
-<!-- ================= LATEST PAPERS ================= -->
+    <!-- =====================================================
+         POPULAR EXAMS
+    ====================================================== -->
 
-<section class="section latest-section" id="papers">
+    <section class="section" id="exams">
 
-    <div class="container">
+        <div class="container">
 
-        <div class="section-heading">
+            <div class="section-heading">
 
-            <div>
-                <span class="section-label">LATEST</span>
-                <h2>Latest PYQ Papers</h2>
-                <p>Recently added question papers.</p>
+                <div>
+
+                    <span class="section-label">
+                        EXPLORE
+                    </span>
+
+                    <h2>
+                        Popular Exams
+                    </h2>
+
+                    <p>
+                        Choose your exam and start practicing.
+                    </p>
+
+                </div>
+
+
+                <a href="#papers" class="view-all">
+                    View All →
+                </a>
+
             </div>
 
-            <a href="#papers" class="view-all">
-                View All →
-            </a>
+
+            <div class="exam-grid">
+
+
+                <!-- CTET -->
+                <div class="exam-card" id="ctet-card">
+
+                    <div class="exam-top">
+
+                        <div class="exam-icon ctet">
+                            🎓
+                        </div>
+
+                        <span class="tag">
+                            Popular
+                        </span>
+
+                    </div>
+
+                    <h3>CTET</h3>
+
+                    <p>
+                        Central Teacher Eligibility Test
+                    </p>
+
+                    <a href="ctet.html">
+                        View Papers →
+                    </a>
+
+                </div>
+
+
+                <!-- HTET -->
+                <div class="exam-card" id="htet-card">
+
+                    <div class="exam-top">
+
+                        <div class="exam-icon htet">
+                            👨‍🏫
+                        </div>
+
+                        <span class="tag">
+                            Teacher
+                        </span>
+
+                    </div>
+
+                    <h3>HTET</h3>
+
+                    <p>
+                        Haryana Teacher Eligibility Test
+                    </p>
+
+                    <a href="htet.html">
+                        View Papers →
+                    </a>
+
+                </div>
+
+
+                <!-- Haryana CET -->
+                <div class="exam-card" id="haryana-cet-card">
+
+                    <div class="exam-top">
+
+                        <div class="exam-icon cet">
+                            📝
+                        </div>
+
+                        <span class="tag">
+                            Haryana
+                        </span>
+
+                    </div>
+
+                    <h3>Haryana CET</h3>
+
+                    <p>
+                        Common Eligibility Test
+                    </p>
+
+                    <a href="cet.html">
+                        View Papers →
+                    </a>
+
+                </div>
+
+
+                <!-- SSC -->
+                <div class="exam-card" id="ssc-card">
+
+                    <div class="exam-top">
+
+                        <div class="exam-icon ssc">
+                            💼
+                        </div>
+
+                        <span class="tag">
+                            Govt. Jobs
+                        </span>
+
+                    </div>
+
+                    <h3>SSC</h3>
+
+                    <p>
+                        Staff Selection Commission
+                    </p>
+
+                    <a href="ssc.html">
+                        View Papers →
+                    </a>
+
+                </div>
+
+
+                <!-- Railway -->
+                <div class="exam-card" id="railway-card">
+
+                    <div class="exam-top">
+
+                        <div class="exam-icon railway">
+                            🚆
+                        </div>
+
+                        <span class="tag">
+                            Railway
+                        </span>
+
+                    </div>
+
+                    <h3>Railway</h3>
+
+                    <p>
+                        Railway Recruitment Exams
+                    </p>
+
+                    <a href="railway.html">
+                        View Papers →
+                    </a>
+
+                </div>
+
+
+                <!-- Other Exams -->
+                <div class="exam-card" id="other-exam-card">
+
+                    <div class="exam-top">
+
+                        <div class="exam-icon other">
+                            📚
+                        </div>
+
+                        <span class="tag">
+                            More
+                        </span>
+
+                    </div>
+
+                    <h3>Other Exams</h3>
+
+                    <p>
+                        More competitive examinations
+                    </p>
+
+                    <a href="other-exam.html">
+                        Explore →
+                    </a>
+
+                </div>
+
+            </div>
 
         </div>
 
+    </section>
 
-        <div class="paper-list">
+
+    <!-- =====================================================
+         LATEST PAPERS
+    ====================================================== -->
+
+    <section class="section latest-section" id="papers">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <span class="section-label">
+                        LATEST
+                    </span>
+
+                    <h2>
+                        Latest PYQ Papers
+                    </h2>
+
+                    <p>
+                        Recently added question papers.
+                    </p>
+
+                </div>
 
 
-            
-            <!-- CTET -->
+                <a href="#papers" class="view-all">
+                    View All →
+                </a>
 
-<div class="paper-card">
+            </div>
 
-    <div class="paper-icon">
-        📄
-    </div>
 
-    <div class="paper-info">
+            <div class="paper-list">
 
-        <div class="paper-tags">
-            <span>CTET</span>
-            <span>2024</span>
-            <span>Paper 2</span>
+
+                <!-- CTET Paper 2 -->
+                <div class="paper-card">
+
+                    <div class="paper-icon">
+                        📄
+                    </div>
+
+                    <div class="paper-info">
+
+                        <div class="paper-tags">
+
+                            <span>CTET</span>
+                            <span>2024</span>
+                            <span>Paper 2</span>
+
+                        </div>
+
+                        <h3>
+                            CTET Paper 2 – 2024
+                        </h3>
+
+                        <p>
+                            Previous Year Question Paper
+                        </p>
+
+                    </div>
+
+
+                    <div class="paper-actions">
+
+                        <a
+                            href="ctet-paper2.html"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="view-btn">
+
+                            👁 View Official Paper
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CTET Paper 1 -->
+                <div class="paper-card">
+
+                    <div class="paper-icon">
+                        📄
+                    </div>
+
+                    <div class="paper-info">
+
+                        <div class="paper-tags">
+
+                            <span>CTET</span>
+                            <span>Paper 1</span>
+                            <span>2024</span>
+
+                        </div>
+
+                        <h3>
+                            CTET Paper 1 – 2024
+                        </h3>
+
+                        <p>
+                            Previous Year Question Paper
+                        </p>
+
+                    </div>
+
+
+                    <div class="paper-actions">
+
+                        <a
+                            href="ctet-paper1.html"
+                            class="view-btn">
+
+                            👁 View Official Paper
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- HTET -->
+                <div class="paper-card">
+
+                    <div class="paper-icon">
+                        📄
+                    </div>
+
+                    <div class="paper-info">
+
+                        <div class="paper-tags">
+
+                            <span>HTET</span>
+                            <span>2024</span>
+                            <span>TGT</span>
+
+                        </div>
+
+                        <h3>
+                            HTET TGT – 2024
+                        </h3>
+
+                        <p>
+                            Previous Year Question Paper
+                        </p>
+
+                    </div>
+
+
+                    <div class="paper-actions">
+
+                        <a
+                            href="htet.html"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="view-btn">
+
+                            👁 View Papers
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Haryana CET -->
+                <div class="paper-card">
+
+                    <div class="paper-icon">
+                        📄
+                    </div>
+
+                    <div class="paper-info">
+
+                        <div class="paper-tags">
+
+                            <span>CET</span>
+                            <span>2024</span>
+                            <span>Haryana</span>
+
+                        </div>
+
+                        <h3>
+                            Haryana CET – 2024
+                        </h3>
+
+                        <p>
+                            Previous Year Question Paper
+                        </p>
+
+                    </div>
+
+
+                    <div class="paper-actions">
+
+                        <a
+                            href="https://hssc.gov.in/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="view-btn">
+
+                            👁 HSSC Official Site
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
         </div>
 
-        <h3>CTET Paper 2 – 2024</h3>
+    </section>
 
-        <p>
-            Previous Year Question Paper
-        </p>
 
-    </div>
+    <!-- =====================================================
+         SUBJECTS
+    ====================================================== -->
 
-    <div class="paper-actions">
+    <section
+        class="section subjects-section"
+        id="subjects">
 
-        <a href="ctet-paper2.html"
-           target="_blank"
-           rel="noopener noreferrer"
-           class="view-btn">
-            👁 View Official Paper
-        </a>
+        <div class="container">
 
-    </div>
+            <div class="section-heading center">
 
-</div>
-<!-- CTET Paper 1 -->
-
-<div class="paper-card">
-
-    <div class="paper-icon">
-        📄
-    </div>
-
-    <div class="paper-info">
-
-        <div class="paper-tags">
-            <span>CTET</span>
-            <span>Paper 1</span>
-            <span>2024</span>
-        </div>
-
-        <h3>CTET Paper 1 – 2024</h3>
-
-        <p>
-            Previous Year Question Papers
-        </p>
-
-    </div>
-
-    <div class="paper-actions">
-
-        <a href="ctet-paper1.html"
-           class="view-btn">
-            👁 View Official Paper
-        </a>
-
-    </div>
-
-</div>
-
-           <!-- HTET -->
-
-<div class="paper-card">
-
-    <div class="paper-icon">
-        📄
-    </div>
-
-    <div class="paper-info">
-
-        <div class="paper-tags">
-            <span>HTET</span>
-            <span>2024</span>
-            <span>TGT</span>
-        </div>
-
-        <h3>HTET TGT – 2024</h3>
-
-        <p>
-            Previous Year Question Paper
-        </p>
-
-    </div>
-
-    <div class="paper-actions">
-
-        <a href="htet.html"
-           target="_blank"
-           rel="noopener noreferrer"
-           class="view-btn">
-            👁 View Official Paper
-        </a>
-
-    </div>
-
-</div>
-
-           <!-- CET -->
-
-<div class="paper-card">
-
-    <div class="paper-icon">
-        📄
-    </div>
-
-    <div class="paper-info">
-
-        <div class="paper-tags">
-            <span>CET</span>
-            <span>2024</span>
-            <span>Haryana</span>
-        </div>
-
-        <h3>Haryana CET – 2024</h3>
-
-        <p>
-            Previous Year Question Paper
-        </p>
-
-    </div>
-
-    <div class="paper-actions">
-
-    <a href="https://hssc.gov.in/"
-       target="_blank"
-       rel="noopener noreferrer"
-       class="view-btn">
-        👁 HSSC Official Site
-    </a>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- ================= SUBJECTS ================= -->
-
-<section class="section subjects-section" id="subjects">
-
-    <div class="container">
-
-        <div class="section-heading center">
-
-            <span class="section-label">BROWSE</span>
-
-            <h2>Browse by Subject</h2>
-
-            <p>
-                Find question papers according to your subject.
-            </p>
-
-        </div>
-
-
-        <div class="subject-grid">
-
-            <a href="general-knowledge.html" class="subject-card">
-    📚
-    <span>General Knowledge</span>
-</a>
-
-           <a href="mathematics.html" class="subject-card">
-    🔢
-    <span>Mathematics</span>
-</a>
-
-
-<a href="reasoning.html" class="subject-card">
-    🧠
-    <span>Reasoning</span>
-</a>
-
-<a href="computer.html" class="subject-card">
-    💻
-    <span>Computer</span>
-</a>
-
-<a href="teaching.html" class="subject-card">
-    👨‍🏫
-    <span>Teaching</span>
-</a>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ================= STUDY TOOLS ================= -->
-
-<section class="tools-section">
-
-    <div class="container">
-
-        <div class="tools-content">
-
-            <div>
-
-                <span class="section-label light">
-                    COMING SOON
+                <span class="section-label">
+                    BROWSE
                 </span>
 
                 <h2>
-                    More Tools for Your Exam Preparation 🚀
+                    Browse by Subject
                 </h2>
 
                 <p>
-                    Practice questions, mock tests, performance
-                    tracking and more useful study tools will be
-                    added gradually.
+                    Find question papers according to your subject.
                 </p>
 
             </div>
 
 
-            <div class="tools-grid">
+            <div class="subject-grid">
 
-                <div class="tool-box">
-                    <span>📝</span>
-                    <strong>Practice</strong>
+                <a
+                    href="general-knowledge.html"
+                    class="subject-card">
+
+                    📚
+
+                    <span>
+                        General Knowledge
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="mathematics.html"
+                    class="subject-card">
+
+                    🔢
+
+                    <span>
+                        Mathematics
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="reasoning.html"
+                    class="subject-card">
+
+                    🧠
+
+                    <span>
+                        Reasoning
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="computer.html"
+                    class="subject-card">
+
+                    💻
+
+                    <span>
+                        Computer
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="teaching.html"
+                    class="subject-card">
+
+                    👨‍🏫
+
+                    <span>
+                        Teaching
+                    </span>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         COMING SOON TOOLS
+    ====================================================== -->
+
+    <section class="tools-section">
+
+        <div class="container">
+
+            <div class="tools-content">
+
+                <div>
+
+                    <span class="section-label light">
+                        COMING SOON
+                    </span>
+
+                    <h2>
+                        More Tools for Your Exam Preparation 🚀
+                    </h2>
+
+                    <p>
+                        Practice questions, mock tests, performance
+                        tracking and more useful study tools will be
+                        added gradually.
+                    </p>
+
                 </div>
 
-                <div class="tool-box">
-                    <span>🎯</span>
-                    <strong>Mock Tests</strong>
+
+                <div class="tools-grid">
+
+                    <div class="tool-box">
+
+                        <span>📝</span>
+
+                        <strong>
+                            Practice
+                        </strong>
+
+                    </div>
+
+
+                    <div class="tool-box">
+
+                        <span>🎯</span>
+
+                        <strong>
+                            Mock Tests
+                        </strong>
+
+                    </div>
+
+
+                    <div class="tool-box">
+
+                        <span>📊</span>
+
+                        <strong>
+                            Results
+                        </strong>
+
+                    </div>
+
                 </div>
 
-                <div class="tool-box">
-                    <span>📊</span>
-                    <strong>Results</strong>
-                </div>
-
             </div>
 
         </div>
 
-    </div>
-
-</section>
+    </section>
 
 
-<!-- ================= ABOUT ================= -->
+    <!-- =====================================================
+         ABOUT
+    ====================================================== -->
 
-<section class="section about-section" id="about">
+    <section
+        class="section about-section"
+        id="about">
 
-    <div class="container about-content">
+        <div class="container about-content">
 
-        <div>
+            <div>
 
-            <span class="section-label">
-                ABOUT PYQ HUB
-            </span>
+                <span class="section-label">
+                    ABOUT PYQ HUB
+                </span>
 
-            <h2>
-                Your Exam Preparation,
-                Made Simpler.
-            </h2>
+                <h2>
+                    Your Exam Preparation, Made Simpler.
+                </h2>
 
-        </div>
-
-        <p>
-            PYQ Hub is being designed as a simple and organized
-            platform where students can discover previous year
-            question papers, explore exams and prepare more
-            effectively. New useful resources and study tools
-            will be added over time.
-        </p>
-
-    </div>
-
-</section>
-
-
-<!-- ================= FAQ ================= -->
-
-<section class="section faq-section">
-
-    <div class="container">
-
-        <div class="section-heading center">
-
-            <span class="section-label">FAQ</span>
-
-            <h2>Frequently Asked Questions</h2>
-
-        </div>
-
-
-        <div class="faq-grid">
-
-            <div class="faq-card">
-                <h3>Q.1 What is PYQ?</h3>
-                <p>
-                    PYQ means Previous Year Question. These papers
-                    help students understand exam patterns and
-                    question types.
-                </p>
             </div>
 
-            <div class="faq-card">
-                <h3>Q.2 Can I view papers online?</h3>
-                <p>
-                    Yes. Papers with available viewing links can
-                    be opened directly from the website.
-                </p>
-            </div>
-
-            <div class="faq-card">
-                <h3>Q.3 Will more exams be added?</h3>
-                <p>
-                    Yes. The platform is planned to expand with
-                    more exams, subjects and study resources.
-                </p>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-<!-- Comment / Feedback Section -->
-
-<section class="comment-section">
-
-    <div class="container">
-
-        <div class="comment-box">
-
-            <h2>✍️ Write Your Opinion</h2>
-
-            <p>Share your thoughts, suggestions or feedback with us.</p>
-
-            <form action="https://formspree.io/f/mjykapyj" method="POST">
-
-                <textarea
-                    name="message"
-                    placeholder="Write your opinion..."
-                    required></textarea>
-
-                <button type="submit">Submit</button>
-
-            </form>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ================= FOOTER ================= -->
-
-<footer class="footer">
-
-    <div class="container footer-grid">
-
-        <div>
-            <div class="footer-brand">
-                📚 <strong>PYQ</strong><span>Hub</span>
-            </div>
 
             <p>
-                Previous Year Questions and exam preparation
-                resources in one place.
+                PYQ Hub is being designed as a simple and organized
+                platform where students can discover previous year
+                question papers, explore exams and prepare more
+                effectively. New useful resources and study tools
+                will be added over time.
             </p>
+
         </div>
 
-        <div>
-            <h3>Quick Links</h3>
+    </section>
 
-            <a href="index.html">Home</a>
-            <a href="#exams">Exams</a>
-            <a href="#papers">PYQs</a>
-            <a href="#subjects">Subjects</a>
+
+    <!-- =====================================================
+         FAQ
+    ====================================================== -->
+
+    <section class="section faq-section">
+
+        <div class="container">
+
+            <div class="section-heading center">
+
+                <span class="section-label">
+                    FAQ
+                </span>
+
+                <h2>
+                    Frequently Asked Questions
+                </h2>
+
+            </div>
+
+
+            <div class="faq-grid">
+
+
+                <div class="faq-card">
+
+                    <h3>
+                        Q.1 What is PYQ?
+                    </h3>
+
+                    <p>
+                        PYQ means Previous Year Question. These papers
+                        help students understand exam patterns and
+                        question types.
+                    </p>
+
+                </div>
+
+
+                <div class="faq-card">
+
+                    <h3>
+                        Q.2 Can I view papers online?
+                    </h3>
+
+                    <p>
+                        Yes. Papers with available viewing links can
+                        be opened directly from the website.
+                    </p>
+
+                </div>
+
+
+                <div class="faq-card">
+
+                    <h3>
+                        Q.3 Will more exams be added?
+                    </h3>
+
+                    <p>
+                        Yes. The platform is planned to expand with
+                        more exams, subjects and study resources.
+                    </p>
+
+                </div>
+
+            </div>
+
         </div>
 
-        <div>
-            <h3>Important</h3>
+    </section>
 
-            <a href="privacy-policy.html">Privacy Policy</a>
-            <a href="terms.html">Terms & Conditions</a>
-            <a href="disclaimer.html">Disclaimer</a>
-            <a href="copyright-policy.html">Copyright Policy</a>
+
+    <!-- =====================================================
+         FEEDBACK
+    ====================================================== -->
+
+    <section class="comment-section">
+
+        <div class="container">
+
+            <div class="comment-box">
+
+                <h2>
+                    ✍️ Write Your Opinion
+                </h2>
+
+                <p>
+                    Share your thoughts, suggestions or feedback with us.
+                </p>
+
+
+                <form
+                    action="https://formspree.io/f/mjykapyj"
+                    method="POST">
+
+                    <textarea
+                        name="message"
+                        placeholder="Write your opinion..."
+                        required></textarea>
+
+                    <button type="submit">
+                        Submit
+                    </button>
+
+                </form>
+
+            </div>
+
         </div>
 
-    </div>
-
-    <div class="footer-bottom">
-        <p>© 2026 PYQ Hub</p>
-        <span>All rights reserved.</span>
-    </div>
-
-</footer>
-
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-
-    const searchInput = document.getElementById("searchInput");
-    const searchBtn = document.getElementById("searchBtn");
-
-    function searchWebsite() {
-
-        const searchText = searchInput.value.trim().toLowerCase();
-
-        const allCards = document.querySelectorAll(
-            ".exam-card, .paper-card, .subject-card"
-        );
-
-        let firstMatch = null;
-
-        allCards.forEach(function (card) {
-
-            const text = card.textContent.toLowerCase();
-
-            if (searchText === "") {
-
-                card.style.display =
-                    card.classList.contains("paper-card")
-                    ? "flex"
-                    : "";
-
-            } else if (text.includes(searchText)) {
-
-                card.style.display =
-                    card.classList.contains("paper-card")
-                    ? "flex"
-                    : "";
-
-                if (firstMatch === null) {
-                    firstMatch = card;
-                }
-
-            } else {
-
-                card.style.display = "none";
-
-            }
-        });
+    </section>
 
 
-        // Search result par scroll
-        if (firstMatch !== null && searchText !== "") {
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
 
-            setTimeout(function () {
+    <footer class="site-footer">
 
-                const position =
-                    firstMatch.getBoundingClientRect().top +
-                    window.scrollY -
-                    120;
 
-                window.scrollTo({
-                    top: position,
-                    behavior: "smooth"
+        <!-- Footer Background -->
+        <div
+            class="footer-floating-bg"
+            aria-hidden="true">
+
+            <span class="footer-bubble bubble-1"></span>
+            <span class="footer-bubble bubble-2"></span>
+            <span class="footer-bubble bubble-3"></span>
+            <span class="footer-bubble bubble-4"></span>
+            <span class="footer-bubble bubble-5"></span>
+            <span class="footer-bubble bubble-6"></span>
+            <span class="footer-bubble bubble-7"></span>
+            <span class="footer-bubble bubble-8"></span>
+            <span class="footer-bubble bubble-9"></span>
+            <span class="footer-bubble bubble-10"></span>
+
+            <span class="footer-star star-1">✦</span>
+            <span class="footer-star star-2">✧</span>
+            <span class="footer-star star-3">✦</span>
+            <span class="footer-star star-4">✧</span>
+            <span class="footer-star star-5">✦</span>
+            <span class="footer-star star-6">✧</span>
+            <span class="footer-star star-7">✦</span>
+            <span class="footer-star star-8">✧</span>
+            <span class="footer-star star-9">✦</span>
+            <span class="footer-star star-10">✧</span>
+            <span class="footer-star star-11">✦</span>
+            <span class="footer-star star-12">✧</span>
+
+        </div>
+
+
+        <!-- Footer Columns -->
+        <div class="footer-container">
+
+
+            <!-- Brand -->
+            <div class="footer-brand">
+
+                <div class="footer-logo">
+
+                    📚
+
+                    <span>
+                        PYQ<span>Hub</span>
+                    </span>
+
+                </div>
+
+
+                <p>
+                    Your one-stop destination for previous year
+                    question papers and smart exam preparation.
+                </p>
+
+            </div>
+
+
+            <!-- Quick Links -->
+            <div class="footer-column">
+
+                <h3>
+                    Quick Links
+                </h3>
+
+                <a href="#home">
+                    🏠 Home
+                </a>
+
+                <a href="#exams">
+                    📝 Exams
+                </a>
+
+                <a href="#papers">
+                    📄 PYQs
+                </a>
+
+                <a href="#subjects">
+                    📚 Subjects
+                </a>
+
+            </div>
+
+
+            <!-- Popular Exams -->
+            <div class="footer-column">
+
+                <h3>
+                    Popular Exams
+                </h3>
+
+                <a href="#ctet-card">
+                    CTET
+                </a>
+
+                <a href="#htet-card">
+                    HTET
+                </a>
+
+                <a href="#haryana-cet-card">
+                    Haryana CET
+                </a>
+
+                <a href="#ssc-card">
+                    SSC
+                </a>
+
+                <a href="#railway-card">
+                    Railway
+                </a>
+
+            </div>
+
+
+            <!-- Important -->
+            <div class="footer-column">
+
+                <h3>
+                    Important
+                </h3>
+
+                <a href="privacy-policy.html">
+                    Privacy Policy
+                </a>
+
+                <a href="terms.html">
+                    Terms & Conditions
+                </a>
+
+                <a href="disclaimer.html">
+                    Disclaimer
+                </a>
+
+                <a href="copyright-policy.html">
+                    Copyright Policy
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- Social Icons -->
+        <div class="footer-social">
+
+            <h4>
+                Follows
+            </h4>
+
+            <div class="social-icons">
+
+                <i class="fa-brands fa-whatsapp"
+                   aria-label="WhatsApp"></i>
+
+                <i class="fa-brands fa-instagram"
+                   aria-label="Instagram"></i>
+
+                <i class="fa-brands fa-telegram"
+                   aria-label="Telegram"></i>
+
+                <i class="fa-brands fa-facebook-f"
+                   aria-label="Facebook"></i>
+
+            </div>
+
+        </div>
+
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 <strong>PYQ Hub</strong>.
+                All rights reserved.
+            </p>
+
+            <p>
+                Made for Students 📚
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function () {
+
+            /* =========================================
+               SEARCH
+            ========================================= */
+
+            const searchInput =
+                document.getElementById("searchInput");
+
+            const searchBtn =
+                document.getElementById("searchBtn");
+
+
+            function searchWebsite() {
+
+                const searchText =
+                    searchInput.value.trim().toLowerCase();
+
+
+                const allCards =
+                    document.querySelectorAll(
+                        ".exam-card, .paper-card, .subject-card"
+                    );
+
+
+                let firstMatch = null;
+
+
+                allCards.forEach(function (card) {
+
+                    const text =
+                        card.textContent.toLowerCase();
+
+
+                    if (searchText === "") {
+
+                        card.style.display =
+                            card.classList.contains("paper-card")
+                                ? "flex"
+                                : "";
+
+                        return;
+                    }
+
+
+                    if (text.includes(searchText)) {
+
+                        card.style.display =
+                            card.classList.contains("paper-card")
+                                ? "flex"
+                                : "";
+
+                        if (firstMatch === null) {
+                            firstMatch = card;
+                        }
+
+                    } else {
+
+                        card.style.display = "none";
+
+                    }
+
                 });
 
-            }, 100);
-        }
-    }
+
+                if (
+                    firstMatch !== null &&
+                    searchText !== ""
+                ) {
+
+                    setTimeout(function () {
+
+                        const position =
+                            firstMatch.getBoundingClientRect().top +
+                            window.scrollY -
+                            120;
 
 
-    // Search button
-    searchBtn.addEventListener("click", searchWebsite);
+                        window.scrollTo({
+                            top: position,
+                            behavior: "smooth"
+                        });
+
+                    }, 100);
+
+                }
+
+            }
 
 
-    // Enter key
-    searchInput.addEventListener("keydown", function (event) {
-
-        if (event.key === "Enter") {
-
-            event.preventDefault();
-
-            searchWebsite();
-
-        }
-
-    });
-
-
-    // जैसे ही search box खाली हो → सभी cards वापस
-    searchInput.addEventListener("input", function () {
-
-        if (this.value.trim() === "") {
-
-            const allCards = document.querySelectorAll(
-                ".exam-card, .paper-card, .subject-card"
+            searchBtn.addEventListener(
+                "click",
+                searchWebsite
             );
 
-            allCards.forEach(function (card) {
 
-                card.style.display =
-                    card.classList.contains("paper-card")
-                    ? "flex"
-                    : "";
+            searchInput.addEventListener(
+                "keydown",
+                function (event) {
 
-            });
+                    if (event.key === "Enter") {
 
-        }
+                        event.preventDefault();
 
-    });
+                        searchWebsite();
 
-});
-</script>
-<script>
-document.addEventListener("DOMContentLoaded", function () {
+                    }
 
-    const menuBtn = document.getElementById("mobileMenuBtn");
-    const navMenu = document.querySelector(".nav-menu");
+                }
+            );
 
-    menuBtn.addEventListener("click", function () {
-        navMenu.classList.toggle("active");
-    });
 
-    navMenu.querySelectorAll("a").forEach(function (link) {
+            searchInput.addEventListener(
+                "input",
+                function () {
 
-        link.addEventListener("click", function () {
-            navMenu.classList.remove("active");
+                    if (this.value.trim() === "") {
+
+                        const allCards =
+                            document.querySelectorAll(
+                                ".exam-card, .paper-card, .subject-card"
+                            );
+
+
+                        allCards.forEach(function (card) {
+
+                            card.style.display =
+                                card.classList.contains("paper-card")
+                                    ? "flex"
+                                    : "";
+
+                        });
+
+                    }
+
+                }
+            );
+
+
+            /* =========================================
+               MOBILE MENU
+            ========================================= */
+
+            const menuBtn =
+                document.getElementById("mobileMenuBtn");
+
+            const navMenu =
+                document.getElementById("mainNav");
+
+
+            menuBtn.addEventListener(
+                "click",
+                function () {
+
+                    const isOpen =
+                        navMenu.classList.toggle("active");
+
+
+                    menuBtn.setAttribute(
+                        "aria-expanded",
+                        isOpen ? "true" : "false"
+                    );
+
+
+                    menuBtn.setAttribute(
+                        "aria-label",
+                        isOpen
+                            ? "Close navigation menu"
+                            : "Open navigation menu"
+                    );
+
+
+                    menuBtn.textContent =
+                        isOpen ? "✕" : "☰";
+
+                }
+            );
+
+
+            /* Close menu after navigation */
+
+            navMenu
+                .querySelectorAll("a")
+                .forEach(function (link) {
+
+                    link.addEventListener(
+                        "click",
+                        function () {
+
+                            navMenu.classList.remove("active");
+
+                            menuBtn.setAttribute(
+                                "aria-expanded",
+                                "false"
+                            );
+
+                            menuBtn.setAttribute(
+                                "aria-label",
+                                "Open navigation menu"
+                            );
+
+                            menuBtn.textContent = "☰";
+
+                        }
+                    );
+
+                });
+
+
+            /* Close menu when clicking outside */
+
+            document.addEventListener(
+                "click",
+                function (event) {
+
+                    if (
+                        !navMenu.contains(event.target) &&
+                        !menuBtn.contains(event.target)
+                    ) {
+
+                        navMenu.classList.remove("active");
+
+                        menuBtn.setAttribute(
+                            "aria-expanded",
+                            "false"
+                        );
+
+                        menuBtn.setAttribute(
+                            "aria-label",
+                            "Open navigation menu"
+                        );
+
+                        menuBtn.textContent = "☰";
+
+                    }
+
+                }
+            );
+
         });
 
-    });
-
-});
-</script>
-<script>
-const mobileMenuBtn = document.getElementById("mobileMenuBtn");
-const navMenu = document.querySelector(".nav-menu");
-
-mobileMenuBtn.onclick = function () {
-
-    if (navMenu.style.display === "flex") {
-
-        navMenu.style.display = "none";
-        mobileMenuBtn.innerHTML = "☰";
-
-    } else {
-
-        navMenu.style.display = "flex";
-        navMenu.style.flexDirection = "column";
-        mobileMenuBtn.innerHTML = "✕";
-
-    }
-
-};
-</script>
+    </script>
 
 </body>
+
 </html>
